@@ -19,7 +19,7 @@
     </header>
     <main>
         <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table class="records">
+        <table id="tableClient" class="records">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -30,7 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!--<tr>
                     <td>Maria</td>
                     <td>maria@gmail.com</td>
                     <td>(11) 97165-1111</td>
@@ -59,7 +59,7 @@
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
                     </td>
-                </tr>
+                </tr>-->
             </tbody>
         </table>
         <div class="modal" id="modal">
@@ -76,7 +76,7 @@
                 </form>
                 <footer class="modal-footer">
                     <button class="button green" id="salvar">Salvar</button>
-                    <button class="button blue">Cancelar</button>
+                    <button class="button blue" id="cancelar">Cancelar</button>
                 </footer>
             </div>
         </div>
