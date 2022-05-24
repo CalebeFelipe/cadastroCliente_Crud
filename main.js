@@ -1,7 +1,12 @@
 'use strict'
 
-const openModal = () => document.getElementById('modal')
+const openModalEdit = () => document.getElementById('modal')
     .classList.add('active')
+
+const openModalCreate = () => {
+    document.getElementById('modal').classList.add('active')    
+    document.getElementById('nomeCliente').dataset.index = 'new'
+}
 
 const closeModal = () => { 
     clearFields()
@@ -105,7 +110,7 @@ const editClient = (index) => {
     const client = readClient()[index]
     client.index = index
     fillFields(client)
-    openModal()
+    openModalEdit()
 }
 
 const editDelete = (event) => {
@@ -131,7 +136,7 @@ updateTable()
 
 // Eventos
 document.getElementById('cadastrarCliente')
-    .addEventListener('click', openModal)
+    .addEventListener('click', openModalCreate)
 
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
