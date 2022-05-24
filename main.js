@@ -53,9 +53,16 @@ const saveClient = () => {
             cidade: document.getElementById('cidadeCliente').value 
         }
 
-        createClient(client)
-        closeModal()
-        updateTable()
+        const index = document.getElementById('nomeCliente').dataset.index
+        if(index == "new") {
+            createClient(client)
+            closeModal()
+            updateTable()
+        } else {
+            updateClient(index, client)
+            closeModal()
+            updateTable() 
+        }
     } 
 }
 
@@ -91,10 +98,12 @@ const fillFields = (client) => {
     document.getElementById('emailCliente').value = client.email
     document.getElementById('celularCliente').value = client.celular
     document.getElementById('cidadeCliente').value = client.cidade
+    document.getElementById('nomeCliente').dataset.index = client.index
 }
 
 const editClient = (index) => {
     const client = readClient()[index]
+    client.index = index
     fillFields(client)
     openModal()
 }
@@ -107,8 +116,12 @@ const editDelete = (event) => {
         if (action == 'edit') {
             editClient(index)
         } else {
-            deleteClient(index)
-            clearTable()
+            const client = readClient()[index]
+            const message = confirm(`Deseja realmente excluir o cliente ${client.nome}`)
+            if(message) {
+                deleteClient(index)
+                updateTable()
+            }
         }
     }
     
