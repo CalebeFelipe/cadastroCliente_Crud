@@ -13,16 +13,17 @@
 </h4>
 
 
-    <p align="center">
-      <a href="#informacao-sobre-o-projeto">Sobre o projeto</a> •
-      <a href="#cadastro-funcionalidades">Funcionalidades</a> •
-      <a href="#tutorial-como-executar-o-projeto">Como executar o projeto</a> • 
-      <a href="#utilizadas-tecnologias">Tecnologias</a> • 
-    </p>
+<p align="center">
+  <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp; •
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp; •
+  <a href="#-como-executar-o-projeto">Como executar o projeto</a>&nbsp; • 
+  <a href="#-tecnologias">Tecnologias</a> 
+</p>
+<br />
+<img src="assets/cadastro-usuario.gif" alt="animação da interação com página">
+<br /><br />
 
-
-
-## 💻 :informacao: Sobre o projeto
+## 💻 Sobre o projeto
 
 💛 Cadastro de Usuário - é uma forma de expandir o aprendizado sobre CRUD (create, read, update e delete), possibilitando o cadastro de usuários fictícios.
 
@@ -31,7 +32,7 @@ Projeto desenvolvido a partir de um vídeo oferecido pelo professor Fernando Leo
 
 ---
 
-## ⚙️ :cadastro: Funcionalidades
+## ⚙️ Funcionalidades
 
 - [x] Usuários podem cadastrar na plataforma web preenchendo:
   - [x] Nome, celular, endereço e cidade
@@ -42,7 +43,7 @@ Projeto desenvolvido a partir de um vídeo oferecido pelo professor Fernando Leo
 
 ---
 
-## 🚀 :tutorial: Como executar o projeto
+## 🚀 Como executar o projeto
 
 ### Pré-requisitos
 
@@ -76,7 +77,7 @@ $ npm run start
 
 ---
 
-## 🛠 :ultilizadas: Tecnologias
+## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
